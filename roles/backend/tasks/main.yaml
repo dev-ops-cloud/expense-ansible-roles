@@ -38,7 +38,7 @@
     path: /app
 
 - name: copy backend service
-  ansible.builtin.templates: # it will search in template folder
+  ansible.builtin.template: # it will search in template folder
     src: backend.service
     dest: /etc/systemd/system/backend.service
 
